@@ -67,7 +67,7 @@ body {
   width: 100%;
   height: 28px;
   margin-left: 800px;
-  top: 32px;
+  top: 45px;
   font-family: 'Playfair Display', serif;
   font-style: normal;
   font-weight: 700;
@@ -95,7 +95,20 @@ body {
 .carrinho-logo {
   width: 25px;
   height: 25px;
-  margin-top: 1px;
+  margin-top: 8px;
+}
+
+.menu-botao {
+  background-color: transparent;
+  display: flex;
+  left: 20px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.menu-logo {
+  width: 40px;
+  height: 40px;
 }
 
 .container-nav {
@@ -115,13 +128,8 @@ body {
   border-radius: 10px;
  }
 
-.menu {
-  width: 40px;
-  height: 40px;
-  top: 30px;
-  left: 80px;
-  position: absolute;
-}
+
+
 
 main {
   width: 100%;
@@ -176,7 +184,7 @@ main {
   font-size: 56px;
 }
 
-main .cards {
+.cards {
   flex-flow:wrap;
   color: var(--preto);
   margin-block: 50px;
@@ -358,12 +366,16 @@ main .stores {
   margin-bottom: 15px;
 }
 
-.divCidade{
+.Cidades {
   border: 2px solid var(--preto);
   margin-left: 15px;
   padding: 20px;
   display: flex;
   width: 630px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  padding-left:10px;
 }
 
 .divendereco{
@@ -372,19 +384,6 @@ main .stores {
   padding: 20px;
   display: flex;
   width: 1000px;
-}
-
-#txtBuscacidade{
-  float:center;
-  background-color:transparent;
-  padding-left:10px;
-  margin-top: 10px;
-  font-size: 20px;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-  border:none;
-  height:32px;
-  width:780px;
 }
 
 #txtBuscaendereco{
@@ -448,6 +447,17 @@ ul {
 
 li {
   margin: 10px 0 10px 0;
+}
+
+.link a {
+  display: block;
+  line-height: 33px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  color: var(--preto);
+  text-decoration: none;
 }
 
 .creditos {
