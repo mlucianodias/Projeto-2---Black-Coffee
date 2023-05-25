@@ -1,29 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;800&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap" rel="stylesheet">
-  <title>Black Coffee</title>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap" rel="stylesheet">
+    <title>Black Coffee</title>
+  </head>
 
-<body>
-    <section class="banner">
-      <header>
-          <img src="/assets/banner/loja.png" class="loja-imagem" alt="balcão da loja">
-
-          <div class="banner-title">
-            <p class="regular">Black</p>
-            <p class="italico">Coffee</p>
-          </div>
+  <body>
+    <header>
+      <div class="box-imagem">
           <div class="container-nav">
             <div class="menu">
               <button class="menu-botao">
-              <img class="menu-logo" src="/assets/banner/Burger.svg">
+                <img class="menu-logo" src="/assets/banner/Burger.svg">
               </button>
+            </div>
+            <div class="banner-title">
+              <p class="regular">Black</p>
+              <p class="italico">Coffee</p>
             </div>
             <div class="card4"><img src="/assets/banner/Group 13.svg" alt="menu"></div>
             <div class="carrinho">
@@ -32,17 +30,17 @@
               </button>
             </div>
           </div>
-        <div>
-          <p class="texto">Preparamos o melhor café fresco da torra cada dia</p>
-          <p class="texto2">Entregamos em todo Brasil </p>
-        </div>
-        <div class="banner-arrows">
-          <img src="/assets/banner/seta esquerda.svg" class="seta-esq">
-          <img src="/assets/banner/seta direita.svg" class="seta-dir">
-        </div>
-      </header>
-    </section>
-
+          <div>
+            <p class="texto">Preparamos o melhor café fresco da torra cada dia</p>
+            <p class="texto2">Entregamos em todo Brasil </p>
+          </div>
+        <button class="arrows">
+          <img class="setas" src="/assets/banner/seta direita.svg">
+          <img class="setas" src="/assets/banner/seta esquerda.svg">
+        </button>
+      </div>
+    </header>
+    
     <main>
       <section class="destaques">
         <div class="destaque">
@@ -62,7 +60,7 @@
       </section>
 
       <section class="variety-cards">
-        <p>Variedades de café</p>
+        <h1>Variedades de café</h1>
         <section class="cards">
           <article class="card">
             <div class="card-tittle">
@@ -70,7 +68,7 @@
                 <img src="/assets/coffee/pacote de cafe.png" alt="pacote de cafe"></div>
                 <section class="valores">
                 <p class="valor1">40 R$</p><p class="valor2">60 R$</p></section>
-                <button>+ adicionar ao carrinho</button>
+                <button class="adicionar">+ adicionar ao carrinho</button>
             </div>
           </article>
 
@@ -80,7 +78,7 @@
                 <img src="/assets/coffee/pacote de cafe.png" alt="pacote de cafe"></div>
                 <section class="valores">
                 <p class="valor1">40 R$</p><p class="valor2">60 R$</p></section>
-                <button>+ adicionar ao carrinho</button>
+                <button class="adicionar">+ adicionar ao carrinho</button>
             </div>
           </article>
           <article class="card">
@@ -89,7 +87,7 @@
                 <img src="/assets/coffee/pacote de cafe.png" alt="pacote de cafe"></div>
                 <section class="valores">
                 <p class="valor1">40 R$</p><p class="valor2">60 R$</p></section>
-                <button>+ adicionar ao carrinho</button>
+                <button class="adicionar">+ adicionar ao carrinho</button>
             </div>
           </article>
           <article class="card">
@@ -98,7 +96,7 @@
                 <img src="/assets/coffee/pacote de cafe.png" alt="pacote de cafe"></div>
                 <section class="valores">
                 <p class="valor1">40 R$</p><p class="valor2">60 R$</p></section>
-                <button>+ adicionar ao carrinho</button>
+                <button class="adicionar">+ adicionar ao carrinho</button>
             </div>
           </article>
           <article class="card">
@@ -107,7 +105,7 @@
                 <img src="/assets/coffee/pacote de cafe.png" alt="pacote de cafe"></div>
                 <section class="valores">
                 <p class="valor1">40 R$</p><p class="valor2">60 R$</p></section>
-                <button>+ adicionar ao carrinho</button>
+                <button class="adicionar">+ adicionar ao carrinho</button>
             </div>
           </article>
           <article class="card">
@@ -116,14 +114,14 @@
                 <img src="/assets/coffee/pacote de cafe.png" alt="pacote de cafe"></div>
                 <section class="valores">
                 <p class="valor1">40 R$</p><p class="valor2">60 R$</p></section>
-                <button>+ adicionar ao carrinho</button>
+                <button class="adicionar">+ adicionar ao carrinho</button>
             </div>
           </article>
         </section>
       </section>
 
       <section class="find-store">
-        <main class="stores">
+        <section class="stores">
           <article class="store">
             <div class="store-tittle">
               <img src="/assets/icons/entrega.svg" alt="transportadora">
@@ -154,18 +152,21 @@
               <div><p>Presente por cada<br>6 caixas de café</p></div>
             </div>
           </article>
+        </section>
       </section>
 
       <section class="catalogos">
-        <div class="catalogo-cafes">
-          <section class="textos"><h2 class="tittle-catalogo">Catálogo de cafés</h2>
-          <p class="text-catalogo">Mais de 50 tipos de café fresco da torra para qualquer método de preparo</p></section>
-          <img src="/assets/coffee/cafe torrado.png" class="catalogo-imagem" alt="tipos de café">
+        <div class="box-cafes">
+          <div class="catalogo-cafes">
+            <section class="textos"><h2 class="tittle-catalogo">Catálogo de cafés</h2>
+            <p class="text-catalogo">Mais de 50 tipos de café fresco da torra para qualquer método de preparo</p></section>
+          </div>
         </div>
-        <div class="acessorios">
-          <h2 class="tittle-acessorios">Acessórios</h2>
-          <p class="text-acessorios">Todo o que a gente precisa para preparar um café saboroso em casa</p>
-          <img src="/assets/coffee/cafeteira.png" class="acessorios-imagem" alt="acessórios para preparo do café">
+        <div class="box-acessorios">
+          <div class="acessorios">
+            <h2 class="tittle-acessorios">Acessórios</h2>
+            <p class="text-acessorios">Todo o que a gente precisa para preparar um café saboroso em casa</p>
+          </div>
         </div>
       </section>
     </main>
@@ -191,13 +192,13 @@
       </iframe>
     </section>
 
-  <footer>
-    <div class="containers">
-      <div class="container-tittle">
+    <footer>
+      <div class="containers">
+        <div class="container-tittle">
           <p class="regular">Black</p>
           <p class="italico">Coffee</p>
-      </div>
-      <div class="container">
+        </div>
+        <div class="container">
           <h6 class="container-titulo">INSTITUCIONAL</h6>
           <ul>
             <p class="links">
@@ -207,8 +208,8 @@
               <a class="link" href="#"><li>Programa de parceiros</li>
             </a></p>
           </ul>
-      </div>
-      <div class="container">
+        </div>
+        <div class="container">
           <h6 class="container-titulo">PRODUTOS</h6>
           <ul>
             <p class="links">
@@ -218,22 +219,22 @@
               <a class="link" href="#"><li>Ofertas</li>
             </a></p>
           </ul>
-      </div>
-      <div class="container">
+        </div>
+        <div class="container">
           <h6 class="container-titulo">REDES SOCIAIS</h6>
-        <div class="social-icones">
+          <div class="social-icones">
             <a href="http://www.instagram.com"><img src="./assets/footer/Instagram.png" alt="instagram"></a>
             <a href="http://www.twitter.com"><img src="./assets/footer/Twitter.png" alt="twitter"></a>
             <a href="http://www.facebook.com"><img src="./assets/footer/Facebook.png" alt="Facebook"></a>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="creditos">
-      <img src="./assets/footer/DESIGNED BY.png" alt="designedby">
-      <img src="./assets/footer/mentorama..png" alt="mentorama">
-    </div>
-  </footer>
+      <div class="creditos">
+        <img src="./assets/footer/DESIGNED BY.png" alt="designedby">
+        <img src="./assets/footer/mentorama..png" alt="mentorama">
+      </div>
+    </footer>
 
-</body>
+  </body>
 
 </html>
