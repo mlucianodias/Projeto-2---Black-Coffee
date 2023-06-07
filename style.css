@@ -46,27 +46,24 @@ body {
 }
 
 .arrows {
-  background-color: transparent;
   display: flex;
   position: absolute;
-  width: 300px;
-  height: 150px;
   left: 80px;
   top: 800px;
+}
+
+.direita {
+  background-color: transparent;
+  padding: 10px;
   cursor: pointer;
   border: none;
 }
 
-.direita {
-  width: 90px;
-  height: 90px;
-  padding: 10px;
-}
-
 .esquerda {
-  width: 90px;
-  height: 90px;
+  background-color: transparent;
   padding: 10px;
+  cursor: pointer;
+  border: none;
 }
 
 .banner-title {
@@ -77,7 +74,7 @@ body {
   font-family: 'Playfair Display', serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 28px;
+  font-size: 15px;
   display: flex;
   align-items: center;
   color:var(--branco);
