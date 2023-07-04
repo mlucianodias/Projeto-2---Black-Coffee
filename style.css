@@ -9,6 +9,9 @@
 }
 
 body {
+  margin:0;
+  padding:0;
+  border:0;
   max-width: 1900px;
   color: var(--preto);
 }
@@ -142,7 +145,7 @@ main {
 }
 
 .destaques {
-  width: 85%;
+  width: 84%;
   padding: 130px 150px 0;
   display: flex;
   flex-direction: column;
@@ -223,7 +226,7 @@ h2 {
 
 .cards img {
   max-width: 100%;
-  margin-left: 30%;
+  margin-left: 180px;
   margin-top: 20px;
 }
 
@@ -237,6 +240,7 @@ h2 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 800;
   font-size: 32px;
+  margin-left: 35px;
 }
 
 .valor2 {
@@ -251,12 +255,9 @@ h2 {
   font-size: 24px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
-  margin-left: 20%;
+  margin-left: 130px;
 }
 
-.card .text {
-  padding: 0 10px 20px;
-}
 
 .adicionar {
   background-color: var(--preto);
@@ -443,7 +444,7 @@ footer {
 .containers {
   display: flex;
   flex-direction: row;
-  justify-content:space-evenly;
+  margin-left: 100px;
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
   font-weight: 300px;
@@ -453,6 +454,7 @@ footer {
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
   font-weight: 300;
+  margin-left: 200px;
 }
 
 .container__title {
@@ -464,6 +466,22 @@ footer {
   margin-left: 0px;
 }
 
+.container__inst {
+  margin-left: 30px;
+}
+
+.container__prod {
+  margin-left: 30px;
+}
+
+.container__social{
+  margin-left: 170px;
+}
+
+.social__icones {
+  margin-left: 195px;
+}
+
 h6 {
   margin-bottom: 15px; 
 }
@@ -472,6 +490,7 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  margin-left: 200px;
 }
 
 li {
